@@ -19,7 +19,7 @@ header h1{
 header p{
     display: inline;
 }
-.comidas, .contacts-item,.back-button{
+.pages, .contacts-item,.back-button{
     text-decoration: none;
     color: inherit;
     background-color: rgb(255, 145, 0);
@@ -29,10 +29,10 @@ header p{
     transition-property: background-color;
     transition-duration: 1s;
 }
-.comidas:hover{
+.pages:hover{
     background-color: red;
 }
-.comidas:active{
+.pages:active{
     border: none;
 }
 h1{
@@ -107,7 +107,18 @@ footer{
     margin:15px 0;
 }
 @media (max-width:500px){
+    .pages{
+        width: calc(100% / 4);
+        text-decoration: none;
+        color: inherit;
+        padding: 7px;
+        border-radius: 0;
+    }
+    .pages--big{
+        width: 120px;
+    }
     .menu{
+        width: 100%;
         position: fixed;
         bottom: 0;
         display: flex;
@@ -128,12 +139,6 @@ footer{
     .slider-item-img{
         height: 100%;
         width: 100vw;
-    }
-    .comidas{
-        text-decoration: none;
-        color: inherit;
-        padding: 7px;
-        border-radius: 0;
     }
     .contacts-item-container{
         font-size: 14px;
