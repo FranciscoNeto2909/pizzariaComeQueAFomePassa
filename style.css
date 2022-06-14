@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+body{
+    margin: 0%;
+    background:linear-gradient(to right , orange, rgb(255, 60, 0), orange);
+}
+header img{
+    height: 150px;
+    margin-top:0;
+}
+header h1{
+    margin-bottom: 5px;
+}
+header p{
+    display: inline;
+}
+.comidas, .contacts-item,.back-button{
+    text-decoration: none;
+    color: inherit;
+    background-color: rgb(255, 145, 0);
+    padding: 5px;
+    border-radius:10px;
+    border: 1px solid black;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+.comidas:hover{
+    background-color: red;
+}
+.comidas:active{
+    border: none;
+}
+h1{
+    margin-bottom:5px;
+}
+.title{
+    margin-top: 10px;
+}
+main{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 27%;
+    margin-top: 15px;
+    padding: 10px;
+}
+.pay-info{
+    margin-top: 15px;
+}
+.contacts{
+    margin-bottom: 45px;
+}
+.contacts-item{
+    text-decoration: none;
+    cursor: pointer;
+}
+footer{
+    font-weight: bold;
+    margin: 15px 0;
+}
+.etiqueta{
+    display: flexbox;
+}
+.sabores{
+    border-bottom: 1px solid black;
+    padding-bottom:10px;
+}
+.sabor{
+    display: inline-block;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+.ingredientes{
+    margin: 0;
+} 
+.container{
+    background-color: chartreuse;
+    height:300px;
+    width: 50vw;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+.slider{
+    height: 7em;
+    display: flex;
+}
+.slider-item{
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+}
+.slider-item-img{
+    height: 100%;
+    width: 50vw;
+}
+.contacts-item-container{
+    margin:15px 0;
+}
+@media (max-width:500px){
+    .menu{
+        position: fixed;
+        bottom: 0;
+        display: flex;
+    }
+    main{
+        margin: 15px;
+    }
+    .container{
+        width: 100vw;
+        height: 200px;
+    }
+    .slider{
+        height: 4em;
+    }
+    .slider-item{
+        height: 200px;
+    }
+    .slider-item-img{
+        height: 100%;
+        width: 100vw;
+    }
+    .comidas{
+        text-decoration: none;
+        color: inherit;
+        padding: 7px;
+        border-radius: 0;
+    }
+    .contacts-item-container{
+        font-size: 14px;
+    }
+}
